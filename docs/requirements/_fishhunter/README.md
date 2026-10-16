@@ -4,7 +4,7 @@
 >
 > Bản đồ hệ thống chi tiết: [`_discovery/system_map.md`](_discovery/system_map.md)
 
-> ⚠️ **Đây là hệ thống RIÊNG**, không liên quan Perfex CRM (danh mục ở [`../README.md`](../README.md)). **Không dùng chung** dải prefix, mã REQ hay TC ID — mã hệ thống `FISH` đứng trước bảo đảm không đụng nhau khi grep.
+> ⚠️ **Đây là hệ thống RIÊNG** trong namespace `_fishhunter/`. **Không dùng chung** dải prefix, mã REQ hay TC ID — mã hệ thống `FISH` đứng trước bảo đảm không đụng nhau khi grep.
 
 | Mục | Giá trị |
 |---|---|
@@ -172,6 +172,7 @@ docs/requirements/_fishhunter/
 
 | Ngày | Thay đổi |
 |---|---|
+| 2026-10-16 | Xoá danh mục Perfex CRM cũ `docs/requirements/README.md` (các module của nó đã không còn trong repo) theo yêu cầu user; gỡ link tới nó ở đầu file này |
 | 2026-10-16 | Recon `SLEG` bằng `/generate-requirements-from-website` (Hybrid, tài liệu bán phần) — **75 REQ** (66 🟢 · 9 ⚪), 10 Story, 14 AMB (9 🔴), 6 RISK, 11 ảnh evidence; 1 file có mục lục (40–80 REQ). Đã quay 300 lượt thật ở mức thấp nhất để kiểm luật điểm (account `chicken` −35.400 vàng). Phát hiện `Giangtran` không đăng nhập được với thông tin trong `.env`. Đối chiếu danh mục: `_fishhunter/*/requirements_*.md` chỉ có `sleg` — khớp |
 | 2026-10-16 | Chuyển tài liệu đề xuất sự kiện từ `docs/Slot_Legends_Event.md` vào [`_discovery/sources/Slot_Legends_Event.md`](_discovery/sources/Slot_Legends_Event.md) theo quy ước lưu bản gốc tài liệu. Nội dung giữ nguyên, đã cập nhật link ở `README.md`, `system_map.md`, `module_02` |
 | 2026-10-16 | Khởi tạo danh mục từ `/discover-system` **Mode UI** — hệ thống thứ hai của repo (sau Perfex CRM), đặt trong namespace `_fishhunter/`. **26 module, 26 prefix**, bản đồ tách 18 file khám phá. User chốt: giữ 26 module · ưu tiên Slot Legends · môi trường **không** dùng chung · QA có quyền gọi API/socket + DevTools. Tiền tố TC ID `FISH_` và việc dùng `docs/Slot_Legends_Event.md` làm nguồn cho `SLEG` là **mặc định của agent** (user chưa trả lời riêng — sửa tại đây nếu cần). Đối chiếu danh mục: namespace mới, chưa có thư mục module nào → khớp |
