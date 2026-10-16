@@ -1,0 +1,11 @@
+{
+  "browser": {
+    "launchOptions": {
+      "headless": false,
+      "args": [
+        "--test-type",
+        "--window-position=0,0"
+      ]
+    }
+  }
+}
